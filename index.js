@@ -11,6 +11,7 @@ function extendApp(app, option) {
 }
 
 function middleware(option) {
+  option=option||{};
   return compose([
     require('koa-webpack-dev-middleware')(webpack(require(webpackConfig)), option.webpack),
     require('koa-node-jscover')({
