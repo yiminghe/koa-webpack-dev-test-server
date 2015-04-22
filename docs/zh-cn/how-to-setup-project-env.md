@@ -1,6 +1,6 @@
 # 建立项目开发测试环境
 
-本文将介绍基于 koa, webpack 建立项目开发测试环境
+本文将介绍基于 `koa`, `webpack` 建立项目开发测试环境
 
 
 ## 依赖项
@@ -29,9 +29,9 @@
 
 ## 建立 webpack 配置文件
 
-必须有 webpack.config.js webpack.dev.config.js webpack.test.config.js，推荐建立 webpack.common.config.js 提取以上三个文件的重复内容
+必须有 `webpack.config.js` `webpack.dev.config.js` `webpack.test.config.js`，推荐建立 `webpack.common.config.js` 提取以上三个文件的重复内容
 
-这里特别指出 webpack.test.js，需要配置 node-jscover-webpack-loader 做为 postLoaders:
+这里特别指出 `webpack.test.js`，需要配置 `node-jscover-webpack-loader` 做为 `postLoaders`:
 
 ```js
 var assign = require('object-assign');
@@ -53,7 +53,7 @@ module.exports = assign({}, common,{ ... });
 
 ### 直接启动
 
-配置 package.json
+配置 `package.json`
 
 ```js
 {
@@ -63,11 +63,11 @@ module.exports = assign({}, common,{ ... });
 }
 ```
 
-默认端口为 8000
+默认端口为 `8000`
 
 ### 自己使用 middleware
 
-可以自己建立 koa 的 server 使用开发服务器提供的中间件
+可以自己建立 `koa` 的 `server` 使用开发服务器提供的中间件
 
 ```js
 var app=require('koa')();
@@ -88,21 +88,21 @@ app.listen(8000);
    - index.css
 ```
 
- 例如 index.js 的内容为
+ 例如 `index.js` 的内容为
 
  ```js
  require('./index.css');
  module.exports={};
  ```
 
- index.html 内容为
+ `index.html` 内容为
 
  ```html
  <link href='./index.css' rel='stylesheet'/>
  <script src='./index.js'></script>
  ```
 
- index-build 推荐为自动生成，里面的地址需要改成 cdn 地址
+ `index-build` 推荐为自动生成，里面的地址需要改成 cdn 地址
 
 
  ### 测试
@@ -115,7 +115,7 @@ app.listen(8000);
     - index-spec.js
 ```
 
-runner.html:
+`runner.html`:
 
 ```html
 <link rel="stylesheet" href="/node_modules/mocha/mocha.css">
@@ -134,7 +134,7 @@ runner.html:
 </script>
 ```
 
-index-spec.js:
+`index-spec.js`:
 
 ```js
 var expect = require('expect.js');
@@ -148,7 +148,7 @@ describe('src',function(){
 });
 ```
 
-测试启动时需要设置环境变量 NODE_ENV 为 test
+测试启动时需要设置环境变量 `NODE_ENV` 为 `test`
 
 ```
 NODE_ENV=test npm start
