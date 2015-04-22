@@ -58,7 +58,7 @@ module.exports = assign({}, common,{ ... });
 ```js
 {
   "scripts":{
-    "start":"node --harmony ./node_modules/bin/start"
+    "start":"node --harmony ./node_modules/koa-webpack-dev-test-server/bin/start"
   }
 }
 ```
