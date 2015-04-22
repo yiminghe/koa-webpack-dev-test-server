@@ -1,6 +1,6 @@
 {
   "name": "koa-webpack-dev-test-server",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "server for dev, test and coverage for koa and webpack",
   "keywords": [
     "koa",
@@ -19,14 +19,15 @@
   "licenses": "MIT",
   "devDependencies": {
     "koa": "~0.19.1",
+    "koa-compose": "^2.3.0",
     "koa-node-jscover": "~1.1.1",
     "koa-serve-index": "~1.0.1",
     "koa-static": "~1.4.9",
     "koa-webpack-dev-middleware": "~1.0.0",
     "precommit-hook": "^1.0.7"
   },
-  "scripts":{
-    "publish":"git push origin master:master"
+  "scripts": {
+    "publish": "git push origin master:master"
   },
   "precommit": [
     "lint"
