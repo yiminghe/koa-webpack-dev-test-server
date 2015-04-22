@@ -45,4 +45,8 @@ app.use(require('koa-webpack-dev-test-server').middleware());
 app.listen(9000);
 ```
 
-for details to see: https://github.com/yiminghe/learning-react
+for details to see:
+
+https://github.com/yiminghe/koa-webpack-dev-test-server/tree/master/docs
+
+https://github.com/yiminghe/learning-react

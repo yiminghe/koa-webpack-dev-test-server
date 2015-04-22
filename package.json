@@ -28,6 +28,9 @@
   "devDependencies": {
     "precommit-hook": "^1.0.7"
   },
+  "bin": {
+    "koa-webpack-dev-test-server": "./bin/start.js"
+  },
   "scripts": {
     "publish": "git push origin master:master"
   },
