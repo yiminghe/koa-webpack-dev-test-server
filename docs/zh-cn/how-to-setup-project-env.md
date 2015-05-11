@@ -162,6 +162,34 @@ NODE_ENV=test npm start
 
 <img src="http://gtms02.alicdn.com/tps/i2/TB1a9qtHFXXXXcnXFXXhHda2VXX-959-396.png" />
 
+##### 使用 phantomjs 运行测试
+
+在执行
+
+```
+npm run test-cover
+```
+
+后，运行
+
+```
+npm run phantomjs
+```
+
+来自动化运行测试用例
+
+![_2015_05_11_6_07_31](http://img4.tbcdn.cn/L1/461/1/c3aa098afe9552822ce081da9040e6282bdf2e46)
+
+运行
+
+```
+npm run phantomjs-cover
+```
+
+来显示测试覆盖率
+
+![_2015_05_11_6_53_33](http://img1.tbcdn.cn/L1/461/1/005262657427ac3d514198d5c7bf615c684fcff5)
+
 ##### 详细信息
 
 打开 http://localhost:8000/node_modules/node-jscover/lib/front-end/jscoverage.html?w=http://localhost:8000/test/runner.html
