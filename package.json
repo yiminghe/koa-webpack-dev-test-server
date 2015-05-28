@@ -1,6 +1,6 @@
 {
   "name": "koa-webpack-dev-test-server",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "server for dev, test and coverage for koa and webpack",
   "keywords": [
     "koa",
@@ -23,7 +23,8 @@
     "koa-node-jscover": "~1.1.1",
     "koa-serve-index": "~1.0.1",
     "koa-static": "~1.4.9",
-    "koa-webpack-dev-middleware": "~1.0.0"
+    "koa-webpack-dev-middleware": "~1.0.0",
+    "object-assign": "~2.0.0"
   },
   "devDependencies": {
     "precommit-hook": "^1.0.7"
