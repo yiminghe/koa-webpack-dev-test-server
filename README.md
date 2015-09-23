@@ -59,9 +59,9 @@ https://github.com/yiminghe/learning-react
 npm start
 ```
 
-open  
+open:
 
-http://localhost:9000/examples/test.html
+[http://localhost:9000/examples/test.html](http://localhost:9000/examples/test.html)
 
 
 checkout browser console
