@@ -1,6 +1,6 @@
 {
   "name": "koa-webpack-dev-test-server",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "server for dev, test and coverage for koa and webpack",
   "keywords": [
     "koa",
@@ -27,12 +27,18 @@
     "object-assign": "~2.0.0"
   },
   "devDependencies": {
-    "precommit-hook": "^1.0.7"
+    "expect.js": "~0.3.1",
+    "mocha": "~2.3.3",
+    "node-jscover": "~0.6.11",
+    "node-jscover-webpack-loader": "~1.0.0",
+    "precommit-hook": "^1.0.7",
+    "webpack": "~1.12.2"
   },
   "bin": {
     "koa-webpack-dev-test-server": "./bin/start.js"
   },
   "scripts": {
+    "start": "node examples/server",
     "publish": "git push origin master:master"
   },
   "precommit": [

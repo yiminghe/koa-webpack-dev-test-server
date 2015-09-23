@@ -50,3 +50,13 @@ for details to see:
 https://github.com/yiminghe/koa-webpack-dev-test-server/tree/master/docs
 
 https://github.com/yiminghe/learning-react
+
+### examples
+
+#### coverage
+
+```
+npm start
+```
+
+open  http://localhost:9000/examples/test.html
